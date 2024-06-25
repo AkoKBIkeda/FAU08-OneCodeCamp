@@ -1,0 +1,45 @@
+# ==== CONFIGURING GIT ====
+
+git config --global user.name "username"
+
+git config --global user.email "email"
+
+git config user.name
+
+git config user.email
+
+ 
+
+U - Untracked
+
+A - Added
+
+ 
+
+# Initialize a repository
+
+git init
+
+ 
+
+# Git 3 Stage Architecture
+
+# Check the status
+
+git status
+
+ 
+
+# Adding files to the staging area
+
+git add .
+
+ 
+
+# Create a commit
+
+git commit -m "This is the description"
+
+
+
+
