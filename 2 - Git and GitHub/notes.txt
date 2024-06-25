@@ -1,62 +1,45 @@
-# ==== CONFIGURING GIT ====
+==== CONFIGURING GIT ====
 
-git config --global user.name "username"
+# set a username
+git config --global user.name "myusername"
 
-git config --global user.email "email"
-
+# check the username
 git config user.name
 
+# set an email
+git config --global user.email "myemail.com"
+
+# check the email
 git config user.email
 
- 
-
+# Status next to the files
 U - Untracked
-
 A - Added
+M - Modified
 
- 
-
-# Initialize a repository
-
+# Initialize a repository in IDE
 git init
 
- 
-
-# Git 3 Stage Architecture
+=== Git 3 Stage Architecture ===
 
 # Check the status
-
 git status
 
- 
-
 # Adding files to the staging area
-
 git add .
 
- 
-
 # Create a commit
-
 git commit -m "This is the description"
 
-
-# Branching
-
- 
+== Branching ==
 
 # List all branches
-
 git branch -a
 
- 
-
 # Create a new branch
-
 git branch [branch-name]
-
- 
+git branch feature
 
 # Switch into a different branch
-
 git switch [branch-name]
+git switch feature

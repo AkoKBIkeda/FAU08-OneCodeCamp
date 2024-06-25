@@ -1,71 +1,30 @@
 # Make a folder (directory)
+mkdir [directory_name]
 mkdir test
 mkdir "test 1"
 
 # Remove a directory/folder
+rmdir [directory_name]
 rmdir test
 rmdir "test 1"
 
-# Print/presetn working directory
+# Print/present working (current) directory
 pwd
 
-# List Command
-List
-
-# Change directory
-cd test
-
-# Go back one folder
-cd ..
-
------
-
-# Make a directory/folder
-
-mkdir [directory_name]
-
- 
-
-# Remove a directory/folder
-
-rmdir [directory_name]
-
- 
-
-# Print/Present Working Directory
-
-pwd
-
- 
-
-# List Command
-
+# List contents of the folder
 ls
 
- 
-
-# Change Directory
-
+# Change directory
 cd [directory_path]
-
- 
+cd test
 
 # Go back one directory
-
 cd ..
 
- 
-
-# Create file
-
+# Create a file
 touch [file_name.ext]
+touch test.txt
 
- 
-
-# Remove file
-
+# Remove a file
 rm [file_name.ext]
-
-
-
-
+rm test.txt
