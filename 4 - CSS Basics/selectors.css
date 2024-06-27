@@ -1,0 +1,41 @@
+/* Element Selector */
+span {
+    background-color: green;
+    color: white;
+}
+
+/* Class Selector */
+.class-name{
+    color: red;
+    background-color: pink;
+}
+
+/* ID Selector */
+#id-name{
+    font-weight: bold;
+}
+
+/* Universal Selector */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Grouping Selector */
+h1, h2, .parag{
+    color: orange;
+}
+
+/* Descendant Selector */
+.ancestor p{
+    color: green;
+    font-style: italic;
+}
+
+/* Pseudo-classes */
+a:hover{
+    color: pink;
+}
+
+a:active{
+    color: red;
+}

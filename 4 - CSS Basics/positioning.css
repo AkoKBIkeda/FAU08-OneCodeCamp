@@ -1,0 +1,37 @@
+/* Position of Relative */
+/* Relative to the original position */
+/* The other element won't take its original position */
+.relative{
+    background-color: aqua;
+    position: relative;
+    top: 60px;
+}
+
+/* Absolute Position */
+/* Absolute position to the parent */
+/* Other position will take over its original space (move up) */
+/* Set the Parent container to the position "Relative" */
+/* Otherwise, this will be absolute to the Root/View Point */
+.absolute{
+    background-color: blueviolet;
+    color:antiquewhite;
+    position: absolute;
+    top: 0px;
+
+}
+
+/* Fixed position */
+/* Fixed to the position even after scrolling the page */
+.fixed{
+    background-color: tomato;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* Sticky Position */
+.sticky{
+    background-color: bisque;
+    position: sticky;
+    top: 10px;
+}

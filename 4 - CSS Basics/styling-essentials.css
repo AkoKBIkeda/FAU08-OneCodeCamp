@@ -1,0 +1,81 @@
+.font-family{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.center-align{
+    text-align: center;
+}
+
+.line-height{
+    line-height: 4;
+
+}
+
+.letter-spacing{
+    letter-spacing: 10px;
+}
+
+.text-shadow{
+    /* 1:horizontal offset 2:vertical offset 3:blur radius */
+    /* horizontal offset, vertical offset, blur radius, color */
+    /* horizontal offset - negative(left) - positive(right) */
+    /* vertical offset - negative(top) - positive(bottom) */
+    text-shadow: 2px 2px 4px blue;
+    /* text-shadow: 4px 4px 4px rgba(0,0,0,0.7); */
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+/* remove the default text decoration (e.g., underline for the link) */
+.remove-text-decoration{
+    text-decoration: none;
+}
+
+.color-names{
+    color: red;
+    background-color: pink;
+}
+
+.hexadecimal{
+    /* #RRGGBB */
+    /* 0 the lowest/darkest and F the highest/brightest */
+    color: #00cc00;
+    background-color: #003300;
+}
+
+.rgb{
+    /* 0 to 255 */
+    /* rgba a:opacity */
+    color: rgb(0, 0, 150);
+    background-color: rgba(1, 141, 149, 0.5);
+}
+
+.absolute-unit{
+    font-size: 22px;
+}
+
+.relative-unit-em{
+    /* 1em = 1x parent value (e.g., 18px x1 = 18px) */
+    /* 2em = 2x parent value (e.g., 18px x2 = 36px) */
+    font-size: 2em;
+}
+
+.relative-unit-rem{
+    /* 1rem = 1x root/html value (e.g., 16px x 1 = 16px) */
+    /* 3rem = 3x root/html value (e.g., 16px x 3 = 48px) */
+    font-size: 3rem;
+}
