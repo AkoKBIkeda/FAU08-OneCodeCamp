@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .flex-container{
+            height: 400px;
+            background-color: bisque;
+        }
+        .item{
+            width: 200px;
+            margin: 10px;
+            border: 2px solid brown;
+            text-align: center;
+            background-color: lightpink;
+        }
+        /* Flex Properties */
+        .flex-container{
+            display: flex;
+        }
+
+        .flex-container{
+            /* row, column, row-reverse, column-reverse */
+            flex-direction: row; /* default */
+        }
+
+        .flex-container{
+            /* wrap items if needed based on the screen size, width etc. */
+            /* Move elements to the next line if anything can't fit within a line */
+            flex-wrap: wrap;
+        }
+        
+        /* Flex Grow - Willingness to Grow */
+        /* Makes items grow beyond their set width */
+        /* 1:2:3 of the extra(growed) space */
+        .item-1{
+            flex-grow: 1;
+        }
+        .item-2{
+            flex-grow: 2;
+        }
+        .item-3{
+            flex-grow: 3;
+        }
+
+        /* Flex Shrink - Willingness to Shrink */
+        /* Makes items shrink beyon thier set width */
+        .item-1{
+            flex-shrink: 1; /* Default Behaviour */
+        }
+        .item-2{
+            flex-shrink: 0; /* won't shrink! */
+        }
+        .item-3{
+            flex-shrink: 2; /* more willing to shring */
+        }
+
+        /* Justify Content (JC) and Align Items (AI) */
+        .flex-container{
+            /* start, center, end */
+            /* space-evenly, space-between, space-around */
+            justify-content: 
+            center;
+        }
+        .flex-container{
+            /* align-items default === stretch */
+            /* start, center, end, stretch */
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+    </div>
+</body>
+</html>

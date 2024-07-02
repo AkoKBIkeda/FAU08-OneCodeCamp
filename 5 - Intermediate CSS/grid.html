@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        /* General Styling */
+        /* Universal selector */
+        * {
+            font-size: 16px;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+        .grid-container{
+            padding: 20px;
+        }
+        .item{
+            background-color: white;
+            border: 1px solid grey;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease; /* apply to the "transform" below */
+        }
+        .item:hover{
+            transform: translateY(-5px);
+        }
+        /* Grid */
+        .grid-container{
+            /* to activate the rest */
+            display: grid; 
+        }
+        /* Using px */
+        .grid-container{
+            grid-template-columns: 300px 400px 100px;
+            grid-template-rows: 200px 150px;
+        }
+        /* Using auto */
+        .grid-container{
+            /* based on the longest word! */
+            grid-template-columns: auto auto auto;
+            /* default height (auto) */
+            grid-template-rows: auto auto auto;
+        }
+        /* Using % */
+        .grid-container{
+            /* 2 equal columns per row */
+            grid-template-columns: 50% 50%;
+            /* different % */
+            grid-template-columns: 60% 20% 20%;
+        }
+        /* Using frections */
+        .grid-container{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        /* Gap */
+        .grid-container{
+            /* 1 = columns & rows */
+            gap: 20px; 
+            /* 2 = 1:row gap, 2: column gap */
+            gap: 20px 5px;
+        }
+        /* Media Queries */
+        /* Mobile Devices: less than 481px 
+        ipads, Tablets: 481px - 768px
+        Small Screens, Laptops: 769px - 1024px 
+        Desktops, Large Screens: 1025px - 1200px
+        Extra large Screens, TV: 1201px and greater */
+
+        /* Large Screen to XL Screens */
+        @media screen and (min-width: 1025px) {
+            .grid-container{
+                /* repeat (how many, measurement) */
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* Media Query for Small Screens */
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            .grid-container{
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .item{
+                font-size: 20px;
+            }
+        }
+        /* Media Query for Tablets and Phones */
+        @media screen and (max-width: 768px) {
+            .grid-container{
+                grid-template-columns: 1fr;
+            }
+            .item{
+                font-size: 25px;
+            }
+            .item7, .item8, .item9{
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item item1">Services</div>
+        <div class="item item2">About Us</div>
+        <div class="item item3">Contact Us</div>
+        <div class="item item4">Mission</div>
+        <div class="item item5">Vision</div>
+        <div class="item item6">Featured Product</div>
+        <div class="item item7">Product 1</div>
+        <div class="item item8">Product 2</div>
+        <div class="item item9">Product 3</div>
+    </div>
+</body>
+</html>

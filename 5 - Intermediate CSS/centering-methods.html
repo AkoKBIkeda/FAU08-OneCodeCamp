@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering Methods</title>
+    <style>
+        /* Internal CSS */
+        .flex-container, .grid-container{
+            height: 200px;
+            background-color: lightgrey;
+            margin-bottom: 20px;
+        }
+
+        .centered-div{
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+        }
+
+        /* Centering ===1D=== */
+        .flex-container{
+            /* The rest comes with this "display: flex" */
+            display: flex;
+            /* horizontal */
+            justify-content: center;
+            /* vertical */
+            align-items: center;
+        }
+        
+        /* ===2D=== */
+        .grid-container{
+            display: grid;
+            /* horizontal & vertical */
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="centered-div">Flex Containder</div>
+    </div>
+        
+    <div class="grid-container">
+        <div class="centered-div">Grid Container</div>
+    </div>
+    
+</body>
+</html>
