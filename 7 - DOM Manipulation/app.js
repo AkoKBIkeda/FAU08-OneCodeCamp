@@ -1,4 +1,4 @@
-// Step 1: Targeting elements
+// Step 1: Targeting elements (Selectors)
 
 // 1. Old way 
 // getElementByID, getElementsByClassName, getElementsByTagName

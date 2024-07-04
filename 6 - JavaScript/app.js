@@ -63,6 +63,7 @@ fruits.forEach(function (fruit){
 })
 
 // indexof() - gets the index of the specific value
+// return -1 if the value is not found in the array
 console.log("Index of 3: ", numbers.indexOf(3));
 console.log("Index of 6: ", numbers.indexOf(6));
 
